@@ -115,8 +115,13 @@
   <div class="panel"><div class="panel-inner">
 
     <div class="tech-item">
-      <h4>カスタムエディタでのコード自動生成 <span class="tag">Editor拡張</span></h4>
-      <p>EditorWindow ベースの自作ツール(CreateJoker)で、GUI から効果の数値やタイミングを設定すると StreamWriter が実際に .cs ファイルを生成する。カード効果(Joker)を量産する際の実装コストを下げる目的で構築。</p>
+      <h4>カスタムエディタでのコード自動生成 <span class="tag">Builder / Interpreter / Factory Method</span></h4>
+      <p>EditorWindow ベースの自作ツール(CreateJoker)で、GUI から効果の数値やタイミングを設定すると StreamWriter が実際に .cs ファイルを生成する。カード効果(Joker)を量産する際の実装コストを下げる目的で構築。設計には3つのデザインパターンを採用:</p>
+      <ul style="margin:10px 0 0 18px; padding:0; color:var(--text-2); font-size:13px; line-height:1.8;">
+        <li><b style="color:var(--text-1);">Builder</b>:エディタ上で部品を選択・組み合わせ、完成品(カード効果クラス)の設計図を段階的に組み立てる</li>
+        <li><b style="color:var(--text-1);">Interpreter / コードジェネレーター</b>:中間データ(.txt)を解釈し、.cs ファイルへと変換する</li>
+        <li><b style="color:var(--text-1);">Factory Method</b>:中間データをもとに、JokerBase を継承した具体的なクラスを生成する</li>
+      </ul>
     </div>
 
     <div class="tech-item">
