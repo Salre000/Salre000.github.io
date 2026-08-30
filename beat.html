@@ -124,8 +124,8 @@
     </div>
 
     <div class="tech-item">
-      <h4>改ざん耐性を意識したセーブデータ設計 <span class="tag">BinaryFormatter</span></h4>
-      <p>クリア情報など改変されたくないデータは BinaryFormatter でバイナリ化する一方、楽曲レベルなど見られても問題ないデータは別形式で管理し、必要な箇所だけ保護する設計にしている。</p>
+      <h4>JsonUtility によるセーブデータ設計 <span class="tag">JsonUtility</span></h4>
+      <p>スコアや実績データは JsonUtility でJSON化して保存。JsonUtility は入れ子の List&lt;List&lt;T&gt;&gt; を直接扱えないため、保存専用のラッパー型を介して1階層に詰め替えるDTOを用意し、可読性・保守性の高いセーブ構成にしている。</p>
     </div>
 
     <div class="tech-item">
