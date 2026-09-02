@@ -100,6 +100,7 @@
   .work-info .idx { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--accent); margin-bottom:12px; letter-spacing:0.08em; display:flex; justify-content:space-between; }
   .work-info h3 { font-size:23px; font-weight:700; margin-bottom:12px; }
   .work-info p { color:var(--text-2); font-size:13px; margin-bottom:18px; }
+  .work-info .highlight { font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--accent); line-height:1.6; margin:-8px 0 18px; }
   .stat-line {
     font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-2);
     display:flex; flex-wrap:wrap; gap:8px 14px; margin-bottom:16px; padding:10px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
@@ -173,6 +174,7 @@
           <div class="idx"><span>作品 01</span><span>詳細を見る →</span></div>
           <h3>ローグハンド</h3>
           <p>ローグライク × デッキ構築 × ポーカー。JokerBase を継承した10種のカード効果と、カスタムエディタでコードを自動生成するツールを実装。</p>
+          <p class="highlight">カスタムエディタでBuilder / Interpreter / Factory Methodの3パターンを実装</p>
           <div class="stat-line"><span>チーム <b>2名</b></span><span>役割 <b>継承設計/エディター拡張</b></span><span>期間 <b>5ヶ月</b></span></div>
           <div class="tags"><span>Unity</span><span>C#</span><span>ScriptableObject</span></div>
         </div>
@@ -186,6 +188,7 @@
           <div class="idx"><span>作品 02</span><span>詳細を見る →</span></div>
           <h3>ハンターモンスター</h3>
           <p>3Dアクション。AnimeBase を継承した攻撃モーション管理と、UniTaskによる非同期処理でモンスターの追加を容易にする設計。</p>
+          <p class="highlight">AnimeBaseを継承した11種の攻撃モーションをオブジェクトプーリングで管理</p>
           <div class="stat-line"><span>チーム <b>3名</b></span><span>役割 <b>プレイヤー操作/アニメーション制作</b></span><span>期間 <b>6ヶ月</b></span></div>
           <div class="tags"><span>Unity</span><span>UniTask</span><span>Blender</span></div>
         </div>
@@ -198,7 +201,8 @@
         <div class="work-info">
           <div class="idx"><span>作品 03</span><span>詳細を見る →</span></div>
           <h3>Beat de Eat</h3>
-          <p>音楽ゲーム。NotesBase を継承した複数ノーツタイプと、まっすぐではないロングノーツの判定処理を実装。</p>
+          <p>音楽ゲーム。NotesBase を継承した複数ノーツタイプと、ロングノーツの判定処理を実装。</p>
+          <p class="highlight">相対座標指定のメッシュ生成による、ロングノーツの押下判定</p>
           <div class="stat-line"><span>チーム <b>2名</b></span><span>役割 <b>エディター拡張/判定処理</b></span><span>期間 <b>2ヶ月</b></span></div>
           <div class="tags"><span>Unity</span><span>C#</span><span>JsonUtility</span></div>
         </div>
