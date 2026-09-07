@@ -85,6 +85,10 @@
   .gallery img { width:100%; display:block; filter:saturate(0.85); }
   .gallery figcaption { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--text-2); padding:8px 2px; }
 
+  .video-wrap { padding:16px; }
+  .video-wrap video { width:100%; display:block; background:#000; }
+  .video-wrap p { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-2); margin-top:12px; line-height:1.6; }
+
   .class-diagram-wrap { overflow-x:auto; }
   .class-diagram-wrap svg { display:block; margin:0 auto; }
 
@@ -118,6 +122,17 @@
     <div><span class="k">役割</span><span class="v">継承設計・エディター拡張</span></div>
   </div>
 </div>
+
+<section>
+  <div class="section-label">動画 — 実際の動作</div>
+  <div class="section-title">プレイ動画</div>
+  <div class="panel"><div class="panel-inner video-wrap">
+    <video controls playsinline preload="metadata" poster="og/roguehand.jpg">
+      <source src="videos/roguehand.mp4" type="video/mp4">
+    </video>
+    <p>JokerBase を継承した4種のジョーカー効果(x4 / x2 / x16 / +5)が、5枚のK(フェイブファイブ)に対して実際に発動する場面。</p>
+  </div></div>
+</section>
 
 <section>
   <div class="section-label">技術 — 実装の工夫</div>
