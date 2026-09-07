@@ -85,6 +85,14 @@
   .gallery img { width:100%; display:block; filter:saturate(0.85); }
   .gallery figcaption { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--text-2); padding:8px 2px; }
 
+  .video-wrap { padding:16px; }
+  .video-wrap video { width:100%; display:block; background:#000; }
+  .video-wrap p { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-2); margin-top:12px; line-height:1.6; }
+  .video-note { display:grid; grid-template-columns:1fr 1.3fr; gap:16px; align-items:start; margin-top:16px; }
+  .video-note img { width:100%; display:block; border:1px solid var(--border); }
+  .video-note .note-body p { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-2); line-height:1.7; }
+  .video-note .note-body .tag { display:inline-block; color:var(--accent); font-size:10.5px; margin-bottom:8px; }
+
   .class-diagram-wrap { overflow-x:auto; }
   .class-diagram-wrap svg { display:block; margin:0 auto; }
 
@@ -119,6 +127,24 @@
     <div><span class="k">役割</span><span class="v">プレイヤー操作・アニメーション制作</span></div>
   </div>
 </div>
+
+<section>
+  <div class="section-label">動画 — 実際の動作</div>
+  <div class="section-title">プレイ動画</div>
+  <div class="panel"><div class="panel-inner video-wrap">
+    <video controls playsinline preload="metadata" poster="og/hunter.jpg">
+      <source src="videos/hunter.mp4" type="video/mp4">
+    </video>
+    <p>モンスターの攻撃モーションと、プレイヤーへの当たり判定が実際に発生する場面。</p>
+    <div class="video-note">
+      <img src="og/hunter_hitbox.jpg" alt="攻撃判定エリアのデバッグ表示">
+      <div class="note-body">
+        <span class="tag">SUPPLEMENT</span>
+        <p>当たり判定エリア(赤いメッシュ)は3フレーム程度で消えるため動画では見えづらく、デバッグ表示のスクリーンショットで補足しています。</p>
+      </div>
+    </div>
+  </div></div>
+</section>
 
 <section>
   <div class="section-label">技術 — 実装の工夫</div>

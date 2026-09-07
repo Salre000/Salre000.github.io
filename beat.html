@@ -84,6 +84,13 @@
   .gallery img { width:100%; display:block; filter:saturate(0.85); }
   .gallery figcaption { font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--text-2); padding:8px 2px; }
 
+  .video-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .video-card { padding:16px; }
+  .video-card video { width:100%; display:block; background:#000; }
+  .video-card h4 { font-size:14px; font-weight:700; margin:14px 0 8px; }
+  .video-card ul { margin:0 0 10px 18px; padding:0; font-size:12px; color:var(--text-2); line-height:1.7; }
+  .video-card .conclusion { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--accent); line-height:1.6; }
+
   .class-diagram-wrap { overflow-x:auto; }
   .class-diagram-wrap svg { display:block; margin:0 auto; }
 
@@ -117,6 +124,35 @@
     <div><span class="k">役割</span><span class="v">エディター拡張・判定処理</span></div>
   </div>
 </div>
+
+<section>
+  <div class="section-label">動画 — 実際の動作</div>
+  <div class="section-title">プレイ動画</div>
+  <div class="video-grid">
+    <div class="panel"><div class="panel-inner video-card">
+      <video controls playsinline preload="metadata" poster="og/beat.jpg">
+        <source src="videos/beat_basic.mp4" type="video/mp4">
+      </video>
+      <h4>動画1 — 基本判定</h4>
+      <ul>
+        <li>ロングノーツの開始〜終了までの判定</li>
+        <li>同時進行する単発ノーツの判定</li>
+      </ul>
+      <p class="conclusion">→ 両手同時入力の基本処理を証明</p>
+    </div></div>
+    <div class="panel"><div class="panel-inner video-card">
+      <video controls playsinline preload="metadata" poster="og/beat.jpg">
+        <source src="videos/beat_advanced.mp4" type="video/mp4">
+      </video>
+      <h4>動画2 — 応用ギミック</h4>
+      <ul>
+        <li>ジグザグ形状の複雑なロングノーツ(始点〜終点まで)</li>
+        <li>サイドレーンの反転(回転)ギミック(開始〜安定まで)</li>
+      </ul>
+      <p class="conclusion">→ 両手で異なる複雑処理を同時にこなす応用力を証明</p>
+    </div></div>
+  </div>
+</section>
 
 <section>
   <div class="section-label">技術 — 実装の工夫</div>
