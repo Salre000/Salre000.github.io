@@ -150,23 +150,13 @@
     </div>
 
     <div class="tech-item">
-      <h4>ScriptableObject によるマスターデータ管理 <span class="tag">データ設計</span></h4>
+      <h4>ScriptableObject によるマスターデータ管理 <span class="tag">データ設計</span> <span class="tag">共同実装</span></h4>
       <p>カード・アイテム・文字列などの定義データを ScriptableObject アセットとして分離。JokerListObject / MaterialList / StringList など、種類ごとに管理クラスを分けている。</p>
-    </div>
-
-    <div class="tech-item">
-      <h4>Observer パターンによるラウンド管理 <span class="tag">設計パターン</span></h4>
-      <p>RoundObserver が Action のリストを保持し、ラウンド終了時に登録済みの処理をまとめて実行する仕組み。ジョーカー効果がラウンド開始・終了のタイミングに割り込めるようにしている。</p>
     </div>
 
     <div class="tech-item">
       <h4>継承構造 <span class="tag">JokerBase</span></h4>
       <p>SaleInterface / ExplanationInterface の2つを実装した JokerBase を基底に、10種類のジョーカー効果クラスを継承で実装。共通の売却処理・説明文取得処理を基底側にまとめている。</p>
-    </div>
-
-    <div class="tech-item">
-      <h4>役判定ロジック <span class="tag">ハンドジャッジ</span></h4>
-      <p>5枚の手札から成立する役を判定するロジックを実装。通常のポーカーには存在しない「ファイブ・オブ・ア・カインド」のような独自の役も含めて判定できるようにしている。複数の役の条件を同時に満たす場合の優先順位判定や、ジョーカー効果による数値の上書き・加算処理が絡んでも正しく役が確定するように設計している。</p>
     </div>
 
   </div></div>
