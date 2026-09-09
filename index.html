@@ -133,6 +133,9 @@
   .skill-pct { width:28px; text-align:right; font-size:11px; color:var(--text-2); }
   .skills-note { font-size:11px; color:var(--text-2); letter-spacing:0.04em; margin:-28px 0 20px; }
   .skill-allworks { color:var(--text-2); font-size:11px; letter-spacing:0.04em; }
+  .code-quality-row { display:flex; align-items:center; gap:16px; margin-top:20px; padding-top:20px; border-top:1px solid var(--border); }
+  .code-quality-badges { display:flex; gap:10px; flex-wrap:wrap; }
+  .code-quality-badges img { height:20px; display:block; }
 
   /* Contact */
   .contact-panel { padding:34px 36px; display:flex; flex-direction:column; gap:18px; }
@@ -248,7 +251,7 @@
 <section id="skills">
   <div class="section-label">03 — スキル</div>
   <div class="section-title">スキルセット</div>
-  <p class="skills-note mono">スコア = 使用作品数 ÷ 紹介作品8本 × 100</p>
+  <p class="skills-note mono">スコア = 使用作品数 ÷ 紹介作品8本 × 100(習熟度ではなく採用率の指標です)</p>
   <div class="panel"><div class="panel-inner skills-panel">
 
     <div class="skill-row">
@@ -274,6 +277,14 @@
     <div class="skill-row">
       <span class="skill-name">Git / GitHub</span>
       <span class="skill-allworks mono">全作品で使用</span>
+    </div>
+
+    <div class="code-quality-row">
+      <span class="skill-name">コード品質</span>
+      <div class="code-quality-badges">
+        <a href="https://www.codefactor.io/repository/github/salre000/rougehand" target="_blank" rel="noopener"><img src="https://www.codefactor.io/repository/github/salre000/rougehand/badge" alt="CodeFactor: rougehand"></a>
+        <a href="https://www.codefactor.io/repository/github/salre000/beat_eat" target="_blank" rel="noopener"><img src="https://www.codefactor.io/repository/github/salre000/beat_eat/badge" alt="CodeFactor: beat_eat"></a>
+      </div>
     </div>
   </div></div>
 </section>
